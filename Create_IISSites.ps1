@@ -30,7 +30,7 @@ $SiteName = "$CustomerName.com"
 $URL = "$CustomerName-$env.com"
 $ADUser = "$env\iis__$CustomerName1" # "domain\username"
 $ADPassword = "password-goes-here"
-$CodePath = "D:\Production\$SiteName"
+$CodePath = "D:\Production\$SiteName1"
 $VirtualDirectoryName = "Help"
 $VirtualDirectoryPath = "D:\Production\HelpFiles\Employees"
 #### -------------------------------- ####
@@ -48,11 +48,11 @@ New-WebVirtualDirectory -Site $SiteName -Name $VirtualDirectoryName -PhysicalPat
 
 
 $CustomerName2 = ("customer3").ToLower()
-$SiteName1 = "$CustomerName1.com"
+$SiteName2 = "$CustomerName1.com"
 $URL1 = "$CustomerName1-$env.com"
 $ADUser1 = "$env\iis__$CustomerName2" # "domain\username"
 $ADPassword1 = "password-goes-here"
-$CodePath1 = "D:\Production\$SiteName"
+$CodePath1 = "D:\Production\$SiteName2"
 $VirtualDirectoryName1 = "Help"
 $VirtualDirectoryPath1 = "D:\Production\HelpFiles\Employees"
 #### -------------------------------- ####
